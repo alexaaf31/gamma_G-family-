@@ -352,7 +352,7 @@ results_GLL_ZB <- goodness.fit(pdf = pdf_GLL_ZB, cdf = cdf_GLL_ZB,
 results_GLL_ZB
 
 
-##grafico do histograma da distribui??o
+##grafico do histograma da distribuição
 
 x = seq(0,300, by = 0.01)
 hist(t, probability = TRUE, xlab = "t", ylab = "f(t)", main = "",ylim = c(0,0.020))
@@ -365,7 +365,7 @@ legend("topright",lwd=c(1,1,1,1),lty=c(1,2,3,4),
        col=c(1,1,1,1),
        bty="n")
 
-##grafico da fun??o emp?rica
+##gráfico da função empírica
 x = seq(0,350, by = 0.01)
 plot(ekm$time, 1-ekm$surv, xlab = "t", ylab = "F(t)",type = "l", lwd=1, col=1, lty=1)
 lines(x, cdf_GBXII(par = results_GBXII$mle, x),col = 1, lwd = 1, lty = 1)
